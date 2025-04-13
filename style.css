@@ -1,0 +1,119 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  #main-header {
+    background-color: #008080;
+    color: white;
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #main-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  #main-header p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  #main-header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  #main-header nav ul li {
+    margin: 0 15px;
+  }
+  
+  #main-header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #main-header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #008080;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .header-content {
+      text-align: center;
+    }
+  
+    #main-header h1 {
+      font-size: 2em;
+    }
+  
+    #main-header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #main-header nav ul li {
+      margin: 10px 0;
+    }
+  
+    .container {
+      width: 90%;
+    }
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    #main-header h1 {
+      font-size: 2.2em;
+    }
+  
+    .container {
+      width: 70%;
+    }
+  }
+  
+  /* Desktop (Larger screens) - No specific changes needed, defaults are good */
+  
